@@ -11,3 +11,6 @@ wheels/
 .env
 venv/
 Todo.txt
+.env.local
+.env.*
+*.env
