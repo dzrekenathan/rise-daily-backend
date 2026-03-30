@@ -1,0 +1,43 @@
+2026-03-30 19:13:47,992 - fastapi_mcp.server - INFO - No auth config provided, skipping auth setup
+2026-03-30 19:13:47,994 - fastapi_mcp.server - INFO - MCP HTTP server listening at /streamable-http/mcp
+2026-03-30 19:13:55,893 - fastapi_mcp.server - INFO - No auth config provided, skipping auth setup
+2026-03-30 19:13:55,893 - fastapi_mcp.server - INFO - MCP HTTP server listening at /streamable-http/mcp
+2026-03-30 19:13:57,165 - fastapi_mcp.server - INFO - No auth config provided, skipping auth setup
+2026-03-30 19:13:57,166 - fastapi_mcp.server - INFO - MCP HTTP server listening at /streamable-http/mcp
+2026-03-30 19:14:39,112 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2026-03-30 19:14:39,113 - fastapi_mcp.transport.http - INFO - StreamableHTTP session manager is running
+2026-03-30 19:14:39,198 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: 26fd16664e0c49598b24237f940f3613
+2026-03-30 19:14:39,492 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2026-03-30 19:14:39,495 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2026-03-30 19:14:39,500 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2026-03-30 19:14:43,080 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2026-03-30 19:14:43,911 - httpx - INFO - HTTP Request: GET http://apiserver/api/v1/quotes?limit=10 "HTTP/1.1 200 OK"
+2026-03-30 19:14:57,797 - mcp.server.lowlevel.server - INFO - Processing request of type CallToolRequest
+2026-03-30 19:14:58,879 - httpx - INFO - HTTP Request: DELETE http://apiserver/api/v1/categories/1 "HTTP/1.1 500 Internal Server Error"
+2026-03-30 19:14:58,880 - fastapi_mcp.server - ERROR - Error calling delete_category
+Traceback (most recent call last):
+  File "D:\Personal\Rise Daily\Backend\.venv\Lib\site-packages\fastapi_mcp\server.py", line 559, in _execute_api_tool
+    raise Exception(
+Exception: Error calling delete_category. Status code: 500. Response: Internal Server Error
+2026-03-30 19:18:33,606 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2026-03-30 19:18:33,607 - fastapi_mcp.transport.http - INFO - StreamableHTTP session manager is shutting down
+2026-03-30 19:18:51,156 - fastapi_mcp.server - INFO - No auth config provided, skipping auth setup
+2026-03-30 19:18:51,156 - fastapi_mcp.server - INFO - MCP HTTP server listening at /streamable-http/mcp
+2026-03-30 19:18:52,297 - fastapi_mcp.server - INFO - No auth config provided, skipping auth setup
+2026-03-30 19:18:52,299 - fastapi_mcp.server - INFO - MCP HTTP server listening at /streamable-http/mcp
+2026-03-30 19:18:52,313 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2026-03-30 19:18:52,313 - fastapi_mcp.transport.http - INFO - StreamableHTTP session manager is running
+2026-03-30 19:19:04,715 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2026-03-30 19:19:04,716 - fastapi_mcp.transport.http - INFO - StreamableHTTP session manager is shutting down
+2026-03-30 19:19:13,835 - fastapi_mcp.server - INFO - No auth config provided, skipping auth setup
+2026-03-30 19:19:13,835 - fastapi_mcp.server - INFO - MCP HTTP server listening at /streamable-http/mcp
+2026-03-30 19:19:15,072 - fastapi_mcp.server - INFO - No auth config provided, skipping auth setup
+2026-03-30 19:19:15,072 - fastapi_mcp.server - INFO - MCP HTTP server listening at /streamable-http/mcp
+2026-03-30 19:19:21,945 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager started
+2026-03-30 19:19:21,946 - fastapi_mcp.transport.http - INFO - StreamableHTTP session manager is running
+2026-03-30 19:19:22,061 - mcp.server.streamable_http_manager - INFO - Created new transport with session ID: dbc7b2d90c7f4e58af7de2c45fe24637
+2026-03-30 19:19:22,373 - mcp.server.lowlevel.server - INFO - Processing request of type ListToolsRequest
+2026-03-30 19:19:22,376 - mcp.server.lowlevel.server - INFO - Processing request of type ListPromptsRequest
+2026-03-30 19:19:22,379 - mcp.server.lowlevel.server - INFO - Processing request of type ListResourcesRequest
+2026-03-30 19:19:37,186 - mcp.server.streamable_http_manager - INFO - StreamableHTTP session manager shutting down
+2026-03-30 19:19:37,188 - fastapi_mcp.transport.http - INFO - StreamableHTTP session manager is shutting down

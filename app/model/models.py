@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
 from sqlalchemy.sql.expression import text
+from sqlalchemy.orm import relationship
 from app.core.database import Base
 from sqlalchemy.sql.sqltypes import TIMESTAMP
 
@@ -13,6 +14,7 @@ class Category(Base):
     description = Column(String, nullable=True)
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text("now()"))
     updated_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text("now()"), onupdate=text("now()"))
+    # quotes = relationship("Quote", back_populates="category")
 
 class Quote(Base):
     __tablename__ = "quotes"
@@ -24,3 +26,4 @@ class Quote(Base):
     category_id = Column(Integer, ForeignKey("categories.id"), nullable=True)
     created_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text("now()"))
     updated_at = Column(TIMESTAMP(timezone=True), nullable=False, server_default=text("now()"), onupdate=text("now()"))
+    # category = relationship("Category", back_populates="quotes")
