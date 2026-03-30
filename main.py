@@ -4,6 +4,7 @@ from app.core.config import settings
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.database import Base, engine
 from app.model import models
+from fastapi_mcp import FastApiMCP
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -18,9 +19,14 @@ app.add_middleware(
 )
 
 
-app.include_router(health.router, prefix="/api/v1", tags=["Health"])
+
 app.include_router(quote.router, prefix="/api/v1", tags=["Quotes"])
 app.include_router(category.router, prefix="/api/v1", tags=["Categories"])
+
+mcp = FastApiMCP(app)
+mcp.mount_http(mount_path="/streamable-http/mcp")
+
+app.include_router(health.router, prefix="/api/v1", tags=["Health"])
 
 if __name__ == "__main__":
     import uvicorn
